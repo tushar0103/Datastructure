@@ -1,0 +1,21 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+int n,f;
+printf("enter the number\n");
+scanf("%d",&n);
+f= fact(n);
+printf("the factorial of the given nmber is :%d",f);
+getch();
+}
+int fact(int n)
+{
+if(n==0)
+{
+return 1;
+}
+else{
+return(n*fact(n-1));
+}
+}
